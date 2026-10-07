@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical guide to evidence-first competitive intelligence through MCP.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Market Changelog">
+  <meta property="og:title" content="MCP competitive intelligence for AI agents | Market Changelog">
+  <meta property="og:description" content="A practical guide to evidence-first competitive intelligence through MCP.">
+  <meta property="og:url" content="https://rabbidbird.github.io/mcp-competitive-intelligence">
+  <meta property="og:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MCP competitive intelligence for AI agents | Market Changelog">
+  <meta name="twitter:description" content="A practical guide to evidence-first competitive intelligence through MCP.">
+  <meta name="twitter:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <title>MCP competitive intelligence for AI agents | Market Changelog</title>
+  <link rel="canonical" href="https://rabbidbird.github.io/mcp-competitive-intelligence">
+  <link rel="stylesheet" href="/assets/market-ledger.css">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/brand/site.webmanifest">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/market-changelog-wordmark.svg" width="180" height="36" alt="Market Changelog"></a>
+      <div class="nav-links">
+        <a href="/about">About</a><a href="/faq">FAQ</a>
+        <a class="button button-small" href="/#access">Apply for pilot</a>
+      </div>
+    </nav>
+  </header>
+  
+<main id="main" class="content-page wrap" itemscope itemtype="https://schema.org/Article" tabindex="-1">
+  
+<div class="article-layout">
+<article class="article-card">
+<p class="breadcrumb"><a href="/">Market Changelog</a> / MCP guide</p>
+<p class="eyebrow">MCP guide</p>
+<h1 itemprop="headline">A durable competitive-intelligence workflow through MCP.</h1>
+<p class="lede" itemprop="description">Typed tools turn page monitoring into an agent workflow with visible scan state, stable change IDs, and evidence that can be retrieved later.</p>
+<div class="byline"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><strong itemprop="name">Jaylen Johnson</strong>, <span itemprop="jobTitle">Founder</span>, Market Changelog</span><span>Updated <time datetime="2026-08-27" itemprop="dateModified">August 27, 2026</time></span><span itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><meta content="Market Changelog" itemprop="name"/><meta content="https://rabbidbird.github.io/" itemprop="url"/></span></div>
+<div itemprop="articleBody">
+<h2>What MCP adds to competitive intelligence</h2>
+<p>Competitive monitoring becomes more useful to an agent when the workflow is exposed as a small set of typed actions rather than a loose collection of scraped pages. Through MCP, an agent can manage an approved target, request monitoring work, inspect scan status, search recorded changes, and retrieve the evidence for one stable change ID.</p>
+<h2>The five-step workflow</h2>
+<div class="facts">
+<div class="fact"><strong>1. Add</strong><span><code>intel_add_target</code> registers an exact, approved public page.</span></div>
+<div class="fact"><strong>2. Queue</strong><span><code>intel_queue_scan</code> creates durable monitoring work without changing the public website.</span></div>
+<div class="fact"><strong>3. Check</strong><span><code>intel_get_scan_status</code> exposes completion or a visible failure state.</span></div>
+<div class="fact"><strong>4. Search</strong><span><code>intel_search_changes</code> returns recorded events for the authenticated workspace.</span></div>
+<div class="fact"><strong>5. Retrieve</strong><span><code>intel_get_change</code> returns the stored evidence behind one <code>chg_</code> ID.</span></div>
+</div>
+<h2>Workspace authority stays outside the prompt</h2>
+<p>The connection determines the active workspace on the server. Customer-facing tools do not need a model-provided <code>tenant_id</code>, workspace ID, or account selector. That design reduces the chance that a prompt or generated tool argument becomes an authorization decision.</p>
+<p>Private design partners currently connect with a revocable workspace API key. A separate public OAuth-capable path is under engineering review, but it is not deployed or offered as a self-service connection today.</p>
+<h2>Evidence is data, not instruction</h2>
+<p>Competitor pages are untrusted external content. Retrieved text and differences can support an analysis, but they must not override the agent's instructions or grant authority. Market Changelog labels that boundary and keeps the source URL and stored transition available for review.</p>
+<h2>Why scan work is queued</h2>
+<p>Fetching real sites can take time and can fail temporarily. A durable queue lets the worker finish or recover the job independently of the agent request. The agent can poll a stable scan ID instead of holding an open request and guessing whether interrupted work completed.</p>
+<div class="callout"><p><strong>Public side effects:</strong> a queued scan performs read-only retrieval of an approved public target and writes only internal workspace records. It does not submit forms, publish content, send messages, or change the monitored site.</p></div>
+<p>For the broader memory model, read <a href="/ai-agent-competitive-intelligence">competitive intelligence for AI agents</a>. For a concrete use case, see <a href="/competitor-pricing-monitoring">competitor pricing monitoring</a>.</p>
+<section class="cta-panel"><h2>Bring a real agent workflow.</h2><p>Design partners test the MCP loop against a small, reviewed set of public pages and help judge whether the stored evidence is genuinely useful.</p><a class="button" href="/#access">Request pilot access</a></section>
+</div>
+</article>
+<aside aria-label="Explore Market Changelog" class="side-nav"><strong>Explore</strong><a href="/ai-agent-competitive-intelligence">AI-agent competitive intelligence</a><a href="/mcp-competitive-intelligence">MCP competitive intelligence</a><a href="/competitor-pricing-monitoring">Pricing monitoring</a><a href="/faq">Frequently asked questions</a><a href="/about">About Market Changelog</a></aside>
+</div>
+
+</main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div itemscope itemtype="https://schema.org/Organization"><meta itemprop="url" content="https://rabbidbird.github.io/"><meta itemprop="logo" content="https://rabbidbird.github.io/assets/brand/market-changelog-avatar.png"><strong itemprop="name">Market Changelog</strong><br>Reliable memory of competitor changes for AI agents.</div>
+      <div><a href="/ai-agent-competitive-intelligence">AI-agent intelligence</a><br><a href="/mcp-competitive-intelligence">MCP guide</a><br><a href="/competitor-pricing-monitoring">Pricing monitoring</a><br><a href="/about">About</a><br><a href="/faq">FAQ</a><br><a href="/privacy">Privacy</a></div>
+      <div>Pilot support<br><a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>

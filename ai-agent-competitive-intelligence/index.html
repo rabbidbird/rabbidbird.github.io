@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How durable source-backed market records help AI agents inspect change over time.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Market Changelog">
+  <meta property="og:title" content="Competitive intelligence for AI agents | Market Changelog">
+  <meta property="og:description" content="How durable source-backed market records help AI agents inspect change over time.">
+  <meta property="og:url" content="https://rabbidbird.github.io/ai-agent-competitive-intelligence">
+  <meta property="og:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Competitive intelligence for AI agents | Market Changelog">
+  <meta name="twitter:description" content="How durable source-backed market records help AI agents inspect change over time.">
+  <meta name="twitter:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <title>Competitive intelligence for AI agents | Market Changelog</title>
+  <link rel="canonical" href="https://rabbidbird.github.io/ai-agent-competitive-intelligence">
+  <link rel="stylesheet" href="/assets/market-ledger.css">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/brand/site.webmanifest">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/market-changelog-wordmark.svg" width="180" height="36" alt="Market Changelog"></a>
+      <div class="nav-links">
+        <a href="/about">About</a><a href="/faq">FAQ</a>
+        <a class="button button-small" href="/#access">Apply for pilot</a>
+      </div>
+    </nav>
+  </header>
+  
+<main id="main" class="content-page wrap" itemscope itemtype="https://schema.org/Article" tabindex="-1">
+  
+<div class="article-layout">
+<article class="article-card">
+<p class="breadcrumb"><a href="/">Market Changelog</a> / Guide</p>
+<p class="eyebrow">Guide</p>
+<h1 itemprop="headline">Competitive intelligence built for AI agents.</h1>
+<p class="lede" itemprop="description">Give an agent a durable, evidence-backed history of competitor changes instead of making every task begin with a fresh search.</p>
+<div class="byline"><span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><strong itemprop="name">Jaylen Johnson</strong>, <span itemprop="jobTitle">Founder</span>, Market Changelog</span><span>Updated <time datetime="2026-08-27" itemprop="dateModified">August 27, 2026</time></span><span itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><meta content="Market Changelog" itemprop="name"/><meta content="https://rabbidbird.github.io/" itemprop="url"/></span></div>
+<div itemprop="articleBody">
+<h2>Why agents need more than a fresh web search</h2>
+<p>A web search can help an agent find what a competitor says today. It does not reliably answer what changed, when the transition happened, or which captured evidence supported the conclusion. Those questions require durable state: an approved target, a baseline, a later observation, and a record that can be retrieved again.</p>
+<p>Market Changelog is being built around that memory layer. It monitors operator-approved public pages, records material transitions as stable change events, and lets an agent retrieve the source context before using the result.</p>
+<div class="facts">
+<div class="fact"><strong>Durable chronology</strong><span>Each recorded transition has a detection time and a stable <code>chg_</code> identifier.</span></div>
+<div class="fact"><strong>Evidence on demand</strong><span>Agents can retrieve stored evidence instead of repeating a live scrape for every question.</span></div>
+<div class="fact"><strong>Bounded targets</strong><span>Monitoring is limited to exact public pages approved for the workspace.</span></div>
+<div class="fact"><strong>Server-side authority</strong><span>The authenticated connection, not a model-supplied workspace value, determines access.</span></div>
+</div>
+<h2>A useful agent loop</h2>
+<p>The basic workflow is intentionally small: add an approved target, queue a scan, check its status, search the workspace's change history, and retrieve a specific event. The search result is a lead for the agent; the evidence record is what supports the next conclusion.</p>
+<p>This is especially useful for product research, pricing analysis, sales enablement, and recurring market reviews where a team needs to distinguish a known transition from page noise.</p>
+<h2>Website change monitoring for AI agents should produce a history</h2>
+<p>Repeated retrieval alone produces disconnected snapshots. A monitoring layer becomes agent-ready when it preserves the relationship between a baseline, a later observation, and the event created from that transition. That history lets an agent answer a multi-day question without treating today's page as the whole record.</p>
+<h2>What “reliable memory” means here</h2>
+<p>Reliability does not mean that every website can be parsed perfectly or that every detected change is strategically important. It means the monitoring work is durable, failures are visible, events have stable identities, and stored source material is clearly treated as untrusted external content.</p>
+<div class="callout"><p><strong>Current stage:</strong> Market Changelog is in a small private design-partner pilot. Onboarding is manual, target lists are reviewed, and there is no public account creation, billing flow, OAuth connection, or service-level agreement today.</p></div>
+<h2>Where MCP fits</h2>
+<p>Model Context Protocol gives compatible agents a typed tool interface for this memory. The interface keeps target management, scan status, change search, and evidence retrieval explicit. Read the <a href="/mcp-competitive-intelligence">MCP competitive-intelligence guide</a> for the complete flow, or see how the same model applies to <a href="/competitor-pricing-monitoring">competitor pricing monitoring</a>.</p>
+<section class="cta-panel"><h2>Evaluate the evidence with us.</h2><p>The private pilot is for people and teams with a recurring competitive question and up to five approved public pricing, documentation, changelog, release-note, or blog pages.</p><a class="button" href="/#access">Request pilot access</a></section>
+</div>
+</article>
+<aside aria-label="Explore Market Changelog" class="side-nav"><strong>Explore</strong><a href="/ai-agent-competitive-intelligence">AI-agent competitive intelligence</a><a href="/mcp-competitive-intelligence">MCP competitive intelligence</a><a href="/competitor-pricing-monitoring">Pricing monitoring</a><a href="/faq">Frequently asked questions</a><a href="/about">About Market Changelog</a></aside>
+</div>
+
+</main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div itemscope itemtype="https://schema.org/Organization"><meta itemprop="url" content="https://rabbidbird.github.io/"><meta itemprop="logo" content="https://rabbidbird.github.io/assets/brand/market-changelog-avatar.png"><strong itemprop="name">Market Changelog</strong><br>Reliable memory of competitor changes for AI agents.</div>
+      <div><a href="/ai-agent-competitive-intelligence">AI-agent intelligence</a><br><a href="/mcp-competitive-intelligence">MCP guide</a><br><a href="/competitor-pricing-monitoring">Pricing monitoring</a><br><a href="/about">About</a><br><a href="/faq">FAQ</a><br><a href="/privacy">Privacy</a></div>
+      <div>Pilot support<br><a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Market Changelog",
+  "short_name": "MC",
+  "icons": [
+    {
+      "src": "/assets/brand/market-changelog-favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/brand/market-changelog-favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0d3328",
+  "background_color": "#f5f3ea",
+  "display": "standalone"
+}

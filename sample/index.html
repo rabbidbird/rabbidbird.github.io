@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read-only demonstration of a price change produced by the monitoring pipeline using synthetic source captures.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Market Changelog">
+  <meta property="og:title" content="Market Changelog | Market change records for AI agents">
+  <meta property="og:description" content="Evidence-backed market change records for AI agents.">
+  <meta property="og:url" content="https://rabbidbird.github.io/">
+  <meta property="og:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Market Changelog | Market change records for AI agents">
+  <meta name="twitter:description" content="Evidence-backed market change records for AI agents.">
+  <meta name="twitter:image" content="https://rabbidbird.github.io/assets/brand/market-changelog-social-card.png">
+  <title>Inspect the pricing evidence | Market Changelog</title>
+  <link rel="canonical" href="https://rabbidbird.github.io/">
+  <link rel="stylesheet" href="/assets/market-ledger.css">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/brand/site.webmanifest">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/market-changelog-wordmark.svg" width="180" height="36" alt="Market Changelog"></a>
+      <div class="nav-links">
+        <a href="/">Home</a><a href="/docs">Agent docs</a>
+        <a class="button button-small" href="/#access">Apply for pilot</a>
+      </div>
+    </nav>
+  </header>
+  
+<main id="main" class="wrap">
+  <section class="hero"><div><p class="eyebrow">Demonstration data · no customer claim</p>
+  <h1>Inspect the pricing evidence.</h1>
+  <p class="lede">The Team plan changed from $72 to $84 per workspace per month in this synthetic source. The monitoring pipeline produced the record below.</p>
+  <p>No real competitor page was fetched. These capture dates belong to the demonstration; they do not establish historical coverage.</p></div>
+  <aside class="ledger-summary"><h2>What the evidence supports</h2>
+  <p>Same named plan, currency, unit and billing interval. A free trial is still a trial; the paid plan has not become free.</p>
+  <p>Business impact: not assessed.</p><p>Confidence is a documented rule heuristic, not a measured probability.</p></aside></section>
+  <section aria-labelledby="comparison"><h2 id="comparison">Original excerpts</h2><div class="record-grid">
+  <article class="evidence-sheet"><h3>Before</h3>
+  <p>Capture time: <time>2026-09-01T12:00:00+00:00</time></p><pre>Team $72 / workspace / month
+Includes 20 projects.
+14-day free trial.</pre>
+  <details><summary>Capture integrity</summary><p>SHA-256 of the original text</p><pre>e15d11ff64dd333fe4a347ec0b6df095b2e20623b5e361a216c1065c0504e373</pre></details></article><article class="evidence-sheet"><h3>After</h3>
+  <p>Capture time: <time>2026-09-02T12:00:00+00:00</time></p><pre>Team $84 / workspace / month
+Includes 20 projects.
+14-day free trial.</pre>
+  <details><summary>Capture integrity</summary><p>SHA-256 of the original text</p><pre>24767c9b32db4e85ab1dfac002201f9b5b8df05188347a64f49bf06b4730bef4</pre></details></article>
+  </div></section>
+  <section><h2>Before and after comparison</h2><pre class="evidence-sheet">--- previous
++++ current
+@@ -1,5 +1,5 @@
+-Team $72 / workspace / month
++Team $84 / workspace / month
+ Includes 20 projects.
+ 14-day free trial.
+ [focused meaningful-value evidence]
+-Team $72 / workspace / month
++Team $84 / workspace / month</pre></section>
+  <section><h2>Supported interpretation</h2><p>Price increase</p>
+  <details><summary>Structured observation: price transition</summary><pre>{
+  "fact": "price_transition",
+  "new": {
+    "artifact_id": null,
+    "billing_period": "month",
+    "capture_id": null,
+    "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+    "currency": "USD",
+    "exact_span": "$84 / workspace / month",
+    "method": "deterministic_price_pair",
+    "normalized_value": 84,
+    "qualifier": null,
+    "source_selector": null,
+    "unit": "workspace",
+    "value": 84
+  },
+  "old": {
+    "artifact_id": null,
+    "billing_period": "month",
+    "capture_id": null,
+    "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+    "currency": "USD",
+    "exact_span": "$72 / workspace / month",
+    "method": "deterministic_price_pair",
+    "normalized_value": 72,
+    "qualifier": null,
+    "source_selector": null,
+    "unit": "workspace",
+    "value": 72
+  }
+}</pre></details>
+  <p>Missing evidence, failed scans, and uncertain associations must remain visible. This example demonstrates one successful synthetic detection and does not measure real-site accuracy.</p>
+  <details><summary>Exact supporting spans and extractor version</summary><pre>[
+  {
+    "exact_span": "$72 / workspace / month",
+    "line": "Team $72 / workspace / month",
+    "side": "old"
+  },
+  {
+    "exact_span": "$84 / workspace / month",
+    "line": "Team $84 / workspace / month",
+    "side": "new"
+  }
+]</pre><pre>{
+  "enrichment_version": null,
+  "extraction_version": "deterministic-market-v2",
+  "model_name": null,
+  "model_provider": null,
+  "prompt_version": null
+}</pre></details>
+  <details><summary>Agent record and full pipeline output</summary><pre>{
+  "captures": [
+    {
+      "captured_at": "2026-09-01T12:00:00+00:00",
+      "sha256": "e15d11ff64dd333fe4a347ec0b6df095b2e20623b5e361a216c1065c0504e373",
+      "text": "Team $72 / workspace / month\nIncludes 20 projects.\n14-day free trial."
+    },
+    {
+      "captured_at": "2026-09-02T12:00:00+00:00",
+      "sha256": "24767c9b32db4e85ab1dfac002201f9b5b8df05188347a64f49bf06b4730bef4",
+      "text": "Team $84 / workspace / month\nIncludes 20 projects.\n14-day free trial."
+    }
+  ],
+  "demonstration": true,
+  "event": {
+    "absolute_change": 0,
+    "artifact_refs": [],
+    "business_impact": {
+      "basis": [],
+      "inference": true,
+      "level": null,
+      "status": "not_assessed",
+      "summary": null
+    },
+    "capture_config_hash": null,
+    "capture_confirmation_status": "not_requested",
+    "capture_ids": [],
+    "card": {
+      "change_id": "chg_fa6a8da216cb43a5",
+      "confidence": {
+        "basis": "currency-matched deterministic rule-strength heuristic with matched identity, unit, interval, and exact diff spans",
+        "level": "high",
+        "score": 0.97
+      },
+      "detected_at": "2026-09-02T12:00:00+00:00",
+      "evidence_status": "available",
+      "page_type": "pricing",
+      "severity": "none",
+      "structured_fact": {
+        "fields": [
+          {
+            "name": "price_transition",
+            "new": "{\u0027value\u0027: 84, \u0027normalized_value\u0027: 84, \u0027unit\u0027: \u0027workspace\u0027, \u0027currency\u0027: \u0027USD\u0027, \u0027billing_period\u0027: \u0027month\u0027, \u0027qualifier\u0027: None, \u0027source_selector\u0027: None, \u0027exact_span\u0027: \u0027$84 / workspace / month\u0027, \u0027capture_id\u0027: None, \u0027artifact_id\u0027: None, \u0027method\u0027: \u0027deterministic_price_pair\u0027, \u0027confidence_basis\u0027: \u0027matched identity, currency, unit, interval, and exact source span\u0027}",
+            "old": "{\u0027value\u0027: 72, \u0027normalized_value\u0027: 72, \u0027unit\u0027: \u0027workspace\u0027, \u0027currency\u0027: \u0027USD\u0027, \u0027billing_period\u0027: \u0027month\u0027, \u0027qualifier\u0027: None, \u0027source_selector\u0027: None, \u0027exact_span\u0027: \u0027$72 / workspace / month\u0027, \u0027capture_id\u0027: None, \u0027artifact_id\u0027: None, \u0027method\u0027: \u0027deterministic_price_pair\u0027, \u0027confidence_basis\u0027: \u0027matched identity, currency, unit, interval, and exact source span\u0027}"
+          }
+        ],
+        "kind": "price_change"
+      },
+      "target": {
+        "name": "Team pricing",
+        "url": "https://example.test/pricing"
+      },
+      "title": "demonstration / Team pricing \u00b7 none \u00b7 content change.",
+      "trust": "untrusted_external_content"
+    },
+    "change_class": "content",
+    "change_id": "chg_fa6a8da216cb43a5",
+    "change_size": "none",
+    "competitor_id": "cmp_62ad09fbdcf9c939",
+    "competitor_slug": "demonstration",
+    "confidence": 0.95,
+    "confidence_basis": "evidence_completeness",
+    "content_hash": {
+      "current": "9b4f7debf7437f5d",
+      "previous": "a9a7bf8a88e49b12"
+    },
+    "content_length": {
+      "current": 69,
+      "previous": 69
+    },
+    "current_capture_id": null,
+    "current_evidence_availability": "available",
+    "current_title": "Demonstration pricing",
+    "deprecated_fields": {
+      "confidence": "Use evidence_quality; this alias is evidence completeness.",
+      "severity": "Use change_size; this alias is source magnitude, not business impact."
+    },
+    "detected_at": "2026-09-02T12:00:00+00:00",
+    "detection_confidence": {
+      "basis": "currency-matched deterministic rule-strength heuristic with matched identity, unit, interval, and exact diff spans",
+      "level": "high",
+      "method": "deterministic",
+      "model": null,
+      "schema_version": "deterministic-market-v2",
+      "score": 0.97
+    },
+    "event_type": "price_increase",
+    "evidence": {
+      "diff": "--- previous\n+++ current\n@@ -1,5 +1,5 @@\n-Team $72 / workspace / month\n+Team $84 / workspace / month\n Includes 20 projects.\n 14-day free trial.\n [focused meaningful-value evidence]\n-Team $72 / workspace / month\n+Team $84 / workspace / month",
+      "retrieved_at": "2026-09-02T12:00:00+00:00",
+      "source_url": "https://example.test/pricing",
+      "status": "available",
+      "trust": "untrusted_external_content",
+      "type": "unified_diff"
+    },
+    "evidence_quality": {
+      "basis": "retained_evidence_completeness",
+      "components": {
+        "capture_manifest": false,
+        "content_hash_pair": true,
+        "content_length_pair": true,
+        "extraction_provenance": true,
+        "previous_observation": true,
+        "reviewable_diff": true,
+        "screenshot": false,
+        "title_transition": false
+      },
+      "level": "good",
+      "score": 0.7
+    },
+    "evidence_quality_at_detection": {
+      "basis": "retained_evidence_completeness",
+      "components": {
+        "capture_manifest": false,
+        "content_hash_pair": true,
+        "content_length_pair": true,
+        "extraction_provenance": true,
+        "previous_observation": true,
+        "reviewable_diff": true,
+        "screenshot": false,
+        "title_transition": false
+      },
+      "level": "good",
+      "score": 0.7
+    },
+    "evidence_spans": [
+      {
+        "exact_span": "$72 / workspace / month",
+        "line": "Team $72 / workspace / month",
+        "side": "old"
+      },
+      {
+        "exact_span": "$84 / workspace / month",
+        "line": "Team $84 / workspace / month",
+        "side": "new"
+      }
+    ],
+    "evidence_status": "available",
+    "extraction_method": "controlled_fixture",
+    "feedback": null,
+    "headline": "demonstration / Team pricing \u00b7 none \u00b7 content change",
+    "id": "chg_fa6a8da216cb43a5",
+    "id_stable": true,
+    "length_delta": 0,
+    "magnitude": {
+      "absolute_length_delta": 0,
+      "change_ratio": 0.029,
+      "edit_lines": {
+        "added": 2,
+        "removed": 2,
+        "total": 4
+      },
+      "length_delta": 0,
+      "similarity": 0.971
+    },
+    "observed_facts": [
+      {
+        "fact": "price_transition",
+        "new": {
+          "artifact_id": null,
+          "billing_period": "month",
+          "capture_id": null,
+          "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+          "currency": "USD",
+          "exact_span": "$84 / workspace / month",
+          "method": "deterministic_price_pair",
+          "normalized_value": 84,
+          "qualifier": null,
+          "source_selector": null,
+          "unit": "workspace",
+          "value": 84
+        },
+        "old": {
+          "artifact_id": null,
+          "billing_period": "month",
+          "capture_id": null,
+          "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+          "currency": "USD",
+          "exact_span": "$72 / workspace / month",
+          "method": "deterministic_price_pair",
+          "normalized_value": 72,
+          "qualifier": null,
+          "source_selector": null,
+          "unit": "workspace",
+          "value": 72
+        }
+      }
+    ],
+    "page_name": "Team pricing",
+    "page_type": "pricing",
+    "possible_implications": [],
+    "previous_at": "2026-09-01T12:00:00+00:00",
+    "previous_capture_id": null,
+    "previous_title": "Demonstration pricing",
+    "provenance": {
+      "enrichment_version": null,
+      "extraction_version": "deterministic-market-v2",
+      "model_name": null,
+      "model_provider": null,
+      "prompt_version": null
+    },
+    "retention_state": "active",
+    "schema_version": 2,
+    "severity": "none",
+    "signals": [
+      "body_changed",
+      "evidence_available"
+    ],
+    "similarity": 0.971,
+    "source_url": "https://example.test/pricing",
+    "status": "changed",
+    "structured_change": {
+      "effective_at": null,
+      "new": [
+        {
+          "artifact_id": null,
+          "billing_period": "month",
+          "capture_id": null,
+          "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+          "currency": "USD",
+          "exact_span": "$84 / workspace / month",
+          "method": "deterministic_price_pair",
+          "normalized_value": 84,
+          "qualifier": null,
+          "source_selector": null,
+          "unit": "workspace",
+          "value": 84
+        }
+      ],
+      "old": [
+        {
+          "artifact_id": null,
+          "billing_period": "month",
+          "capture_id": null,
+          "confidence_basis": "matched identity, currency, unit, interval, and exact source span",
+          "currency": "USD",
+          "exact_span": "$72 / workspace / month",
+          "method": "deterministic_price_pair",
+          "normalized_value": 72,
+          "qualifier": null,
+          "source_selector": null,
+          "unit": "workspace",
+          "value": 72
+        }
+      ]
+    },
+    "target_id": "tgt_9f1f12085c2b886c",
+    "tenant_id": "sample",
+    "title_changed": false,
+    "visual_diff_metrics": null
+  },
+  "generation": "run_monitoring with synthetic fetch responses and controlled DNS",
+  "network_requests": 0,
+  "synthetic_dates": true
+}</pre><a href="/sample/data">Download demonstration JSON</a></details></section>
+  <section><h2>Try the same evaluation with your agent</h2><ol><li>Connect your approved account and select up to five reviewed public pricing pages.</li><li>Wait for a successful baseline and the next monitoring cycle.</li><li>Ask your agent to retrieve the exact evidence and mark each change useful or noise.</li><li>Return for another cycle, then decide whether continuing is worth paying for.</li></ol><p>Public account activation and a paid offer remain pending. <a href="/#access">Apply for the private pilot</a>.</p></section>
+</main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div itemscope itemtype="https://schema.org/Organization"><meta itemprop="url" content="https://rabbidbird.github.io/"><meta itemprop="logo" content="https://rabbidbird.github.io/assets/brand/market-changelog-avatar.png"><strong itemprop="name">Market Changelog</strong><br>Reliable memory of competitor changes for AI agents.</div>
+      <div><a href="/ai-agent-competitive-intelligence">AI-agent intelligence</a><br><a href="/mcp-competitive-intelligence">MCP guide</a><br><a href="/competitor-pricing-monitoring">Pricing monitoring</a><br><a href="/about">About</a><br><a href="/faq">FAQ</a><br><a href="/privacy">Privacy</a></div>
+      <div>Pilot support<br><a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>

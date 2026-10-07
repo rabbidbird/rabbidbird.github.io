@@ -1,0 +1,21 @@
+{
+  "origin": "https://rabbidbird.github.io",
+  "html_routes": [
+    "/",
+    "/ai-agent-competitive-intelligence",
+    "/mcp-competitive-intelligence",
+    "/competitor-pricing-monitoring",
+    "/faq",
+    "/sample",
+    "/about",
+    "/docs",
+    "/docs/connect",
+    "/docs/changes",
+    "/privacy",
+    "/thanks"
+  ],
+  "form_collection_enabled": false,
+  "files": 42,
+  "hosting": "github-pages",
+  "temporary_review_deployment": true
+}
