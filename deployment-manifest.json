@@ -8,14 +8,17 @@
     "/faq",
     "/sample",
     "/about",
+    "/verification",
     "/docs",
     "/docs/connect",
     "/docs/changes",
     "/privacy",
+    "/terms",
     "/thanks"
   ],
   "form_collection_enabled": false,
-  "files": 42,
+  "files": 48,
   "hosting": "github-pages",
-  "temporary_review_deployment": true
+  "public_product_site": true,
+  "temporary_review_deployment": false
 }

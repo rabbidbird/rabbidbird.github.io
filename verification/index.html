@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reviewer-facing product, company, and technical verification for Market Changelog.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Market Changelog">
+  <meta property="og:title" content="Product verification | Market Changelog">
+  <meta property="og:description" content="Reviewer-facing product, company, and technical verification for Market Changelog.">
+  <meta property="og:url" content="https://marketchangelog.com/verification">
+  <meta property="og:image" content="https://marketchangelog.com/assets/brand/market-changelog-social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Product verification | Market Changelog</title>
+  <link rel="canonical" href="https://marketchangelog.com/verification">
+  <link rel="stylesheet" href="/assets/market-ledger.css">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/market-changelog-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/brand/site.webmanifest">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/market-changelog-wordmark.svg" width="180" height="36" alt="Market Changelog"></a>
+      <div class="nav-links">
+        <a href="/about">About</a><a href="/docs">Docs</a>
+        <a class="button button-small" href="mailto:pilot@marketchangelog.com?subject=Market%20Changelog%20review">Contact company</a>
+      </div>
+    </nav>
+  </header>
+
+<main id="main" class="content-page wrap" itemscope itemtype="https://schema.org/TechArticle" tabindex="-1">
+  <div class="article-layout">
+    <article class="article-card">
+      <p class="breadcrumb"><a href="/">Market Changelog</a> / Verification</p>
+      <p class="eyebrow">Reviewer information</p>
+      <h1>Verify the company, product, and current stage.</h1>
+      <p class="lede">This page separates what is live today, what is demonstrated with controlled data, and what we plan to build with Claude.</p>
+
+      <h2>Company identity</h2>
+      <div class="facts">
+        <div class="fact"><strong>Operator</strong><span>Johnson Solutions LLC</span></div>
+        <div class="fact"><strong>Product</strong><span>Market Changelog</span></div>
+        <div class="fact"><strong>Founder</strong><span>Jaylen Johnson</span></div>
+        <div class="fact"><strong>Company email</strong><span><a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a></span></div>
+        <div class="fact"><strong>Stage</strong><span>Private design-partner pilot</span></div>
+        <div class="fact"><strong>Website</strong><span>marketchangelog.com</span></div>
+      </div>
+      <p>Market Changelog is founder-led and operated by Johnson Solutions LLC. The public review site and company email use the same verified domain. Founder development work is also visible through the <a href="https://github.com/rabbidbird">rabbidbird GitHub profile</a>.</p>
+
+      <h2>What is live today</h2>
+      <ul>
+        <li>A public HTTPS website with product, technical, privacy, and pilot documentation.</li>
+        <li>An access-controlled MCP endpoint at <code>https://mcp.marketchangelog.com/mcp</code>; anonymous requests are rejected.</li>
+        <li>A private pilot workflow for approved public pricing, product, documentation, changelog, release-note, blog, and market pages.</li>
+        <li>Durable change IDs, retained before-and-after evidence, and an MCP search-and-retrieval contract documented in the <a href="/docs">pilot docs</a>.</li>
+      </ul>
+
+      <h2>What the public demonstration proves</h2>
+      <p>The <a href="/sample">read-only sample record</a> is deliberately synthetic. It demonstrates the stored schema, exact evidence spans, stable change identifier, deterministic classification metadata, and separation between observed facts and unassessed business impact. It is not presented as a customer result or a live competitor capture.</p>
+
+      <h2>Planned Claude use</h2>
+      <p>Claude is intended to classify meaningful changes, synthesize evidence-backed research, generate decision-ready briefs, and support MCP-connected analyst workflows. Source capture, hashing, access control, and durable event storage remain separate deterministic controls. Competitor content is treated as untrusted evidence, not as instructions to the model.</p>
+
+      <h2>Security and operating boundaries</h2>
+      <ul>
+        <li>Only operator-approved public targets are admitted; authenticated and private customer pages are out of scope.</li>
+        <li>Workspace authority is derived from the verified server-side connection, not a model-supplied tenant identifier.</li>
+        <li>Credentials are revocable and are not accepted through public forms, prompts, or support messages.</li>
+        <li>A baseline is not reported as a market change. Missing evidence and failed scans remain visible.</li>
+        <li>Human review is required before model output becomes a business decision.</li>
+      </ul>
+
+      <h2>Fast reviewer path</h2>
+      <ol>
+        <li>Read the <a href="/about">company and founder page</a>.</li>
+        <li>Inspect the <a href="/sample">full demonstration record</a> and downloadable JSON.</li>
+        <li>Review the <a href="/mcp-competitive-intelligence">MCP tool flow</a> and <a href="/docs/connect">connection boundary</a>.</li>
+        <li>Read the <a href="/privacy">privacy notice</a> and <a href="/terms">pilot terms</a>.</li>
+        <li>Contact <a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a> from a reviewer address if additional verification is needed.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>Current limitation</strong>
+        <p>There is no public self-service signup, billing system, OAuth flow, marketplace listing, or SLA. Pilot access is manually reviewed and provisioned.</p>
+      </div>
+    </article>
+    <aside aria-label="Verification links" class="side-nav">
+      <strong>Verification links</strong>
+      <a href="/about">Company and founder</a>
+      <a href="/sample">Evidence sample</a>
+      <a href="/docs">Technical docs</a>
+      <a href="/privacy">Privacy notice</a>
+      <a href="/terms">Pilot terms</a>
+      <a href="https://github.com/rabbidbird/rabbidbird.github.io">Review-site repository</a>
+    </aside>
+  </div>
+</main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div itemscope itemtype="https://schema.org/Organization"><meta itemprop="url" content="https://marketchangelog.com/"><meta itemprop="logo" content="https://marketchangelog.com/assets/brand/market-changelog-avatar.png"><strong itemprop="name">Market Changelog</strong><br>A product operated by Johnson Solutions LLC.</div>
+      <div><a href="/about">About</a><br><a href="/verification">Verification</a><br><a href="/docs">Docs</a><br><a href="/privacy">Privacy</a><br><a href="/terms">Terms</a></div>
+      <div>Company contact<br><a href="mailto:pilot@marketchangelog.com">pilot@marketchangelog.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>
