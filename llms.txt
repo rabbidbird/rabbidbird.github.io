@@ -5,7 +5,7 @@
 Market Changelog is a hosted competitive-intelligence layer for AI agents, delivered through MCP.
 It monitors operator-approved public competitor pages, records material transitions as durable
 events with stable change IDs, and lets authenticated agents retrieve the evidence behind them.
-The product is operated by Johnson Solutions LLC and founded by Jaylen Johnson.
+The product is an Ohio-registered trade name founded and operated by Jaylen Johnson.
 
 ## Current availability
 

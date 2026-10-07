@@ -1,6 +1,6 @@
 # Market Changelog public product site
 
-This repository publishes the public website for [Market Changelog](https://marketchangelog.com), a founder-led competitive-intelligence product operated by Johnson Solutions LLC.
+This repository publishes the public website for [Market Changelog](https://marketchangelog.com), a founder-led competitive-intelligence product and Ohio-registered trade name operated by Jaylen Johnson.
 
 Market Changelog monitors operator-approved public competitor pages, records material transitions as durable events, and exposes source evidence to authorized AI-agent workflows through MCP. The product is currently in a private design-partner pilot with manual onboarding.
 
