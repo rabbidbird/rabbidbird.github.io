@@ -11,20 +11,20 @@ events with stable change IDs, and lets authenticated agents retrieve the eviden
 - Private pilot for people and teams running agents, with manual onboarding
 - Default pilot scope: up to five approved public pages
 - No public self-service signup, OAuth connection, billing flow, or SLA today
-- Request access: https://rabbidbird.github.io/#access
+- Request access: https://marketchangelog.com/#access
 
 ## Canonical pages
 
-- Product overview: https://rabbidbird.github.io/
-- Competitive intelligence for AI agents: https://rabbidbird.github.io/ai-agent-competitive-intelligence
-- MCP competitive intelligence guide: https://rabbidbird.github.io/mcp-competitive-intelligence
-- Competitor pricing monitoring guide: https://rabbidbird.github.io/competitor-pricing-monitoring
-- Frequently asked questions: https://rabbidbird.github.io/faq
-- About the founder and product: https://rabbidbird.github.io/about
-- Privacy notice: https://rabbidbird.github.io/privacy
-- Private pilot docs: https://rabbidbird.github.io/docs
-- MCP connection guide: https://rabbidbird.github.io/docs/connect
-- Change evidence guide: https://rabbidbird.github.io/docs/changes
+- Product overview: https://marketchangelog.com/
+- Competitive intelligence for AI agents: https://marketchangelog.com/ai-agent-competitive-intelligence
+- MCP competitive intelligence guide: https://marketchangelog.com/mcp-competitive-intelligence
+- Competitor pricing monitoring guide: https://marketchangelog.com/competitor-pricing-monitoring
+- Frequently asked questions: https://marketchangelog.com/faq
+- About the founder and product: https://marketchangelog.com/about
+- Privacy notice: https://marketchangelog.com/privacy
+- Private pilot docs: https://marketchangelog.com/docs
+- MCP connection guide: https://marketchangelog.com/docs/connect
+- Change evidence guide: https://marketchangelog.com/docs/changes
 
 ## Important interpretation notes
 
